@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Ubuntu+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(img.png);
+    background-repeat: no-repeat;
+    
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li a :hover {
+    border-bottom: 20px;
+    font-size: 15px;
+}
+
+.header-text {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 60px;
+    margin-top: 20%;
+    text-align: center;
+    color: white;
+} */
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* 
+/* Background image */
+body {
+    background: url("./Img.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+
+    font-family: "Helvetica", sans-serif;
+}
+*/
+
+/* Background image */
+body {
+    position: relative; /* Ensure relative positioning for pseudo-element */
+    background: url("./Img.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: "Helvetica", sans-serif;
+}
+
+/* Overlay background color */
+body::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    z-index: -1;
+}
+
+p {
+    font-family: "Roboto Mono", monospace;
+}
+
+/* Container styling */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+#header {
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#header nav ul li {
+    margin-left: 20px;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.header-text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-text p {
+    font-size: 20px;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #5236ef;
+}
+
+/* Navigation link hover effect */
+#header nav ul li a:hover,
+#header nav ul li a:focus {
+    font-weight: bold; /* Make the font bold on hover */
+    font-size: 18px; /* Increase font size on hover */
+}
+
+/* About section styling */
+#about {
+    display: flex;
+    flex-direction: row; /* Change flex-direction to row */
+    align-items: center;
+    padding: 50px 20px; /* Adjust vertical padding */
+    padding-left: 10%; /* Add left padding */
+    padding-right: 10%; /* Add right padding */
+    /* background: rgba(0, 0, 0, 0.5); */
+    margin: 50px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-col-1 {
+    width: 100%;
+    max-width: 400px;
+    margin-right: 20px; /* Add margin to create space between image and text */
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.about-col-2 {
+    width: 100%;
+    max-width: 800px;
+}
+
+.about-col-2 .sub-title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #5236ef;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.about-col-2 p {
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Services section styling */
+#services {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#services .sub-title {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #5236ef;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-list div {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(166, 90, 90, 0.1);
+}
+
+.services-list h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #5236ef;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.services-list p {
+    line-height: 1.6;
+}
+
+/* Contact section styling */
+#contact {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.contact-right .sub-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #5236ef;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input,
+form textarea {
+    width: 80%;
+    padding: 15px; /* Increase padding for better readability */
+    margin-bottom: 20px;
+    border: 2px solid #5236ef; /* Add border for better visibility */
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Add background color */
+    color: #fff; /* Change text color */
+    font-size: 16px; /* Increase font size */
+    font-family: "Pixelify Sans", sans-serif;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s; /* Add transition effect */
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Adjust placeholder color */
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #5236ef; /* Change border color on focus */
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.2
+    ); /* Change background color on focus */
+}
+
+form textarea {
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+form .btn {
+    padding: 15px 30px; /* Increase padding for better visibility */
+    border: none;
+    border-radius: 5px;
+    background: #2a1c79;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form .btn:hover {
+    background: #231866;
+}
