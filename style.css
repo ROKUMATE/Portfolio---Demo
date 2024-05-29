@@ -1,62 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Ubuntu+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
-/*
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-image: url(img.png);
-    background-repeat: no-repeat;
-    
-}
-
-#header {
-    width: 100%;
-    height: 100vh;
-
-    background-size: cover;
-    background-position: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-nav {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav li {
-    list-style: none;
-    display: inline-block;
-    margin: 10px 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-nav ul li a :hover {
-    border-bottom: 20px;
-    font-size: 15px;
-}
-
-.header-text {
-    font-family: "Pixelify Sans", sans-serif;
-    font-size: 60px;
-    margin-top: 20%;
-    text-align: center;
-    color: white;
-} */
 
 /* Reset default styles */
 * {
@@ -65,7 +8,7 @@ nav ul li a :hover {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-/* 
+
 /* Background image */
 body {
     background: url("./Img.png") no-repeat center center fixed;
@@ -74,11 +17,10 @@ body {
 
     font-family: "Helvetica", sans-serif;
 }
-*/
 
 /* Background image */
 body {
-    position: relative; /* Ensure relative positioning for pseudo-element */
+    position: relative;
     background: url("./Img.png") no-repeat center center fixed;
     background-size: cover;
     color: #fff;
@@ -87,13 +29,13 @@ body {
 
 /* Overlay background color */
 body::before {
-    content: ""; /* Required for pseudo-elements */
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+    /* background-color: rgba(0, 0, 0, 0.5); */
     z-index: -1;
 }
 
@@ -150,18 +92,18 @@ p {
 /* Navigation link hover effect */
 #header nav ul li a:hover,
 #header nav ul li a:focus {
-    font-weight: bold; /* Make the font bold on hover */
-    font-size: 18px; /* Increase font size on hover */
+    font-weight: bold;
+    font-size: 18px;
 }
 
 /* About section styling */
 #about {
     display: flex;
-    flex-direction: row; /* Change flex-direction to row */
+    flex-direction: row;
     align-items: center;
-    padding: 50px 20px; /* Adjust vertical padding */
-    padding-left: 10%; /* Add left padding */
-    padding-right: 10%; /* Add right padding */
+    padding: 50px 20px;
+    padding-left: 10%;
+    padding-right: 10%;
     /* background: rgba(0, 0, 0, 0.5); */
     margin: 50px 0;
     border-radius: 10px;
@@ -171,7 +113,7 @@ p {
 .about-col-1 {
     width: 100%;
     max-width: 400px;
-    margin-right: 20px; /* Add margin to create space between image and text */
+    margin-right: 20px;
 }
 
 .about-col-1 img {
@@ -260,40 +202,35 @@ form {
 form input,
 form textarea {
     width: 80%;
-    padding: 15px; /* Increase padding for better readability */
+    padding: 15px;
     margin-bottom: 20px;
-    border: 2px solid #5236ef; /* Add border for better visibility */
+    border: 2px solid #5236ef;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1); /* Add background color */
-    color: #fff; /* Change text color */
-    font-size: 16px; /* Increase font size */
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
     font-family: "Pixelify Sans", sans-serif;
-    transition: border-color 0.3s, background-color 0.3s, color 0.3s; /* Add transition effect */
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
 }
 
 form input::placeholder,
 form textarea::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* Adjust placeholder color */
+    color: rgba(255, 255, 255, 0.7);
 }
 
 form input:focus,
 form textarea:focus {
     outline: none;
-    border-color: #5236ef; /* Change border color on focus */
-    background-color: rgba(
-        255,
-        255,
-        255,
-        0.2
-    ); /* Change background color on focus */
+    border-color: #5236ef;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 form textarea {
-    resize: vertical; /* Allow vertical resizing of textarea */
+    resize: vertical;
 }
 
 form .btn {
-    padding: 15px 30px; /* Increase padding for better visibility */
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     background: #2a1c79;
